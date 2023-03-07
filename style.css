@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+/* genel ayarlar */
+*{
+    box-sizing: border-box;
+}
+body,html{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+/* hero-image */
+
+.hero-image{
+    background-image: linear-gradient(rgba(2,10,32,0.7),rgba(2,10,32,0.7)),url(img/arkaplan.jpg);
+    height: 320px;
+    background-position: top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.navbar-brand img{
+    width: 236px;
+}
+.nav-link{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 0 !important;
+}
+.nav-link:hover{
+    color: #a1a1a1;
+}
+.navbar{
+    width: 96%;
+}
+.nav-item{
+    margin-inline: 20px;
+}
+.hero-text{
+    position: absolute;
+    left: 50%;
+    top: 85%;
+    transform: translate(-50%,-50%);
+    letter-spacing: 6px;
+    color: #ffff;
+    font-weight: 500;
+    font-size: 24px;
+    font-family: 'Times New Roman', Times, serif;
+    transition: 0.8s;
+
+}
+
+/* container */
+
+.liste li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+
+.liste li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #a1a1a1;
+    font-size: 14px;
+    letter-spacing: 2px;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.liste li a:hover{
+    color: #990033;
+}
+.renk a{
+    color: #990033 !important;
+}
+.cizgi{
+    width: 70%;
+    border: 1px solid black;
+    margin-top: 40px;
+}
+.aksan{
+    width: 60%;
+}
+.card{
+    background-color: #020a20;
+    border: none;
+}
+.card img{
+    opacity: 0.8;
+}
+.card-body{
+    background-color: #fff;
+    text-align: center;
+}
+.card-body h5{
+    letter-spacing: 2px;
+    font-size: 16px;
+    margin: 5px 0 20px 0;
+    font-weight: 500;
+}
+.card-body p{
+    font-size: 14px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+
+/* scrool için */
+
+::-webkit-scrollbar{
+    width: 5px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #020a20;
+}
+::-webkit-scrollbar-track{
+    background-color: lightgrey;
+}
+.trn{
+    transition: 1s;
+}
+
+/* responsive ayarları */
+
+@media screen and (max-width:1230px){
+    .nav-item{
+        margin-inline: 10px;
+    }
+    .navbar-brand img{
+        width: 168px;
+    }
+}
+@media screen and (max-width:1065px){
+    .hero-image{
+        background-position: center;
+    }
+}
+@media screen and (max-width:991px){
+    .navbar-brand img{
+        width: 232px;
+    }
+    .navbar-toggler-icon{
+        background-image: url(img/togglericon.png);
+    }
+}
+@media screen and (max-width:767px){
+    .hero-text{
+        top: 50%;
+        letter-spacing: 3px;
+    }
+    .liste{
+        text-align: center;
+    }
+    .cizgi{
+        width: 100%;
+    }
+    .aksan{
+        width: 100%;
+    }
+}
+@media screen and (max-width:640px){
+    
+}
